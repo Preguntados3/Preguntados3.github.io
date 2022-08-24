@@ -1,23 +1,134 @@
+*{
+    font-size: 20px;
+}
+
+#backgroung { 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+ } 
+ .stretch { 
+    width:100%;
+    height:100%;
+ }
+
+
+
 .container{
-    height:90vh;
+    height:78vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #btn-1{
-    font-size: 6em;
+    font-size: 5em;
     border-radius: 20px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(25, 128, 11);
     transition: ease-in .3s;
-    
 }
 
 #btn-1:hover{
-    font-size: 6.2em;
+    font-size: 5.5em;
     background-color: rgb(30, 255, 0);
-    transition: ease-in .3s;
     color: black;
     cursor: pointer;
+}
+.menu li{
+    list-style: none;
+}
+
+
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    
+}
+.menu button{
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+#registrarse button{
+    padding-left: 90%;
+    background-color: white;
+    border: none ;
+    cursor: pointer;
+    
+}
+
+#registrar{
+    position: absolute;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    box-shadow: 0 1rem 1rem  rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1rem);
+    border-radius: 5px;
+    color: #fff;
+}
+h2{
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 120px;
+    left: 0;
+    bottom: 0;    
+}
+input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 6px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+}
+
+.acuerdo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.btn-2{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height:40px ;
+    background-color: #5d5b5b96;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+}
+.link{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
 }
