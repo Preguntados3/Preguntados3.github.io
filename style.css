@@ -95,12 +95,15 @@
 
 #registrar input{
     border:none;
-    border-radius: 15px
+    border-radius: 15px;
+    margin-bottom: 2%
+    
 }
 
 #registrar button{
     border-radius: 7px;
     cursor: pointer;
+   
 }
 
 
