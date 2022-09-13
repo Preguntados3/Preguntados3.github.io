@@ -93,6 +93,65 @@
 
 }
 
+#iniciarSesion{
+    position: absolute;
+    text-align:center;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    padding-right: 25px;
+    box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
+    background-color: rgba(0, 0, 0, 0.062);
+    backdrop-filter: blur(100rem);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    
+
+}
+
+#highScore{
+    position: absolute;
+    text-align:center;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    padding-right: 25px;
+    box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
+    background-color: rgba(0, 0, 0, 0.062);
+    backdrop-filter: blur(100rem);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    
+}
+
+#highScore h2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(30, 255, 0);
+    width: 100%;
+    left: 0;
+    bottom: 0;    
+}
+
+#iniciarSesion input{
+    border:none;
+    border-radius: 15px;
+    margin-bottom: 2%
+    
+}
+
 #registrar input{
     border:none;
     border-radius: 15px;
@@ -106,6 +165,16 @@
    
 }
 
+#iniciarSesion p{
+    cursor: pointer;
+}
+
+#registrar p{
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+
 
 h2{
     position: relative;
@@ -113,16 +182,28 @@ h2{
     margin-bottom: 15px;
     padding-bottom: 7px;
 }
-h2::after{
+#registrar h2::after{
     content: "";
     position: absolute;
     height: 3px;
     border-radius: 3px;
     background-color: rgb(30, 255, 0);
-    width: 120px;
+    width: 100%;
     left: 0;
     bottom: 0;    
 }
+
+#iniciarSesion h2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(30, 255, 0);
+    width: 100%;
+    left: 0;
+    bottom: 0;    
+}
+
 input{
     display: block;
     width: 100%;
