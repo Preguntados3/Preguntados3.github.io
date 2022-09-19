@@ -1,5 +1,5 @@
 *{
-    font-size: 17px;
+    font-size: 1.04em;
 }
 
 
@@ -19,7 +19,7 @@
 
 
 .container{
-    height:78vh;
+  height:75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,6 @@
     border: none;
     background-color: white;
     text-decoration: none;
-    padding: 10px 20px;
     cursor: pointer;
 }
 .navbar{
@@ -75,7 +74,7 @@
 #registrar{
     position: absolute;
     text-align:center;
-    min-width: 280px;
+   
     max-width: 25%;
     width: 25%;
     top: 50%;
@@ -84,7 +83,7 @@
     padding: 15px;
     padding-right: 25px;
     box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
-    background-color: rgba(0, 0, 0, 0.062);
+    background-color: rgba(255, 255, 255);
     backdrop-filter: blur(100rem);
     border-radius: 5px;
     color: rgb(0, 0, 0);
@@ -96,16 +95,16 @@
 #iniciarSesion{
     position: absolute;
     text-align:center;
-    min-width: 280px;
+
     max-width: 25%;
     width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 15px;
-    padding-right: 25px;
+    padding: 1.5vw;
+    padding-right: 2.5vw;
     box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
-    background-color: rgba(0, 0, 0, 0.062);
+    background-color: rgba(255, 255, 255);
     backdrop-filter: blur(100rem);
     border-radius: 5px;
     color: rgb(0, 0, 0);
@@ -117,16 +116,16 @@
 #highScore{
     position: absolute;
     text-align:center;
-    min-width: 280px;
+   
     max-width: 25%;
     width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 15px;
-    padding-right: 25px;
+    padding: 1.5vw;
+    padding-right: 2.5vw;
     box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
-    background-color: rgba(0, 0, 0, 0.062);
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(100rem);
     border-radius: 5px;
     color: rgb(0, 0, 0);
@@ -137,7 +136,7 @@
 #highScore h2::after{
     content: "";
     position: absolute;
-    height: 3px;
+    height: 0.3vh;
     border-radius: 3px;
     background-color: rgb(30, 255, 0);
     width: 100%;
@@ -178,14 +177,13 @@
 
 h2{
     position: relative;
-    font-size: 18px;
-    margin-bottom: 15px;
-    padding-bottom: 7px;
+    margin-bottom: 1.5vw;
+    padding-bottom: 0.7vw;
 }
 #registrar h2::after{
     content: "";
     position: absolute;
-    height: 3px;
+    height: 0.3vh;
     border-radius: 3px;
     background-color: rgb(30, 255, 0);
     width: 100%;
@@ -196,7 +194,7 @@ h2{
 #iniciarSesion h2::after{
     content: "";
     position: absolute;
-    height: 3px;
+    height: 0.3vh;
     border-radius: 3px;
     background-color: rgb(30, 255, 0);
     width: 100%;
@@ -207,12 +205,13 @@ h2{
 input{
     display: block;
     width: 100%;
-    height: 40px;
-    padding: 5px 6px;
-    margin-bottom: 15px;
+    height: 8vh;
+    padding: 0.5vw 0.6vw;
+    margin-bottom: 1.5vh;
     border: none;
     outline: none;
     border-radius: 1px;
+    background-color: rgb(235, 235, 235)    ;
 }
 
 .acuerdo{
@@ -225,11 +224,15 @@ input{
     display: block;
     margin: auto;
     width: 100%;
-    height:40px ;
+    height: 8vh;
     border: none;
     cursor: pointer;
     border-radius: 20px;
     color: #fff;
+}.btn-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .link{
     text-align: center;
@@ -239,10 +242,19 @@ input{
 .header {
     color: #36A0FF;
     font-size: 27px;
-    padding: 10px;
+    padding: 0.1vw;
 }
 
 .bigicon {
     font-size: 35px;
     color: #36A0FF;
 }
+
+@media(max-width: 800px){
+    .menu{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+    }
+    }
