@@ -251,4 +251,9 @@ input{
     .menu_bar{
         display: block;
     }
+    #registrar{
+        left: 85%;
+        width: 85%;
+        transform: translate(-85%,-50%);
+    }
     }
