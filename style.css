@@ -1,5 +1,5 @@
 *{
-    font-size: 1.04em;
+    font-size: 17px;
 }
 
 
@@ -19,7 +19,7 @@
 
 
 .container{
-  height:75vh;
+    height:78vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,6 +57,7 @@
     border: none;
     background-color: white;
     text-decoration: none;
+    padding: 10px 20px;
     cursor: pointer;
 }
 .navbar{
@@ -64,7 +65,8 @@
     justify-content: space-between;
 }
 #registrarse button{
-    padding-left: 90%;
+    margin-left: 90%;
+    padding: 0px;
     background-color: white;
     border: none ;
     cursor: pointer;
@@ -74,12 +76,16 @@
 #registrar{
     position: absolute;
     text-align:center;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 15px;
+    padding-right: 25px;
     box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(245,245,245);
     backdrop-filter: blur(100rem);
     border-radius: 5px;
     color: rgb(0, 0, 0);
@@ -91,15 +97,16 @@
 #iniciarSesion{
     position: absolute;
     text-align:center;
-
+    min-width: 280px;
     max-width: 25%;
     width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 1.5vw;
+    padding: 15px;
+    padding-right: 25px;
     box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(245,245,245);
     backdrop-filter: blur(100rem);
     border-radius: 5px;
     color: rgb(0, 0, 0);
@@ -111,15 +118,16 @@
 #highScore{
     position: absolute;
     text-align:center;
-   
+    min-width: 280px;
     max-width: 25%;
     width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 1.5vw;
+    padding: 15px;
+    padding-right: 25px;
     box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(245,245,245);
     backdrop-filter: blur(100rem);
     border-radius: 5px;
     color: rgb(0, 0, 0);
@@ -127,16 +135,6 @@
     
 }
 
-#highScore h2::after{
-    content: "";
-    position: absolute;
-    height: 0.3vh;
-    border-radius: 3px;
-    background-color: rgb(30, 255, 0);
-    width: 100%;
-    left: 0;
-    bottom: 0;    
-}
 
 #iniciarSesion input{
     border:none;
@@ -162,50 +160,66 @@
     cursor: pointer;
 }
 
+
 #registrar p{
     cursor: pointer;
     transition: ease-in .2s;
 }
+.btn-cerrar{
+    position: absolute;
+    left: 92%;
+    top: 0%;
+    color: red;
+    background: none;
+    border: none;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.navbar-nav{
+    margin-left: 50%;
+}
+
+.navbar-nav li{
+    margin-left: 10%;
+}
+.sammy-nowrap-1 {
+   
+    white-space: nowrap;
+}
 
 
+.nombreYapellido{
+    display: flex;
+}
+
+#registrar input{
+    margin-bottom: 5%;
+}
+
+#iniciarSesion input{
+    margin-bottom: 5%;
+}
 
 h2{
     position: relative;
-    margin-bottom: 1.5vw;
-    padding-bottom: 0.7vw;
-}
-#registrar h2::after{
-    content: "";
-    position: absolute;
-    height: 0.3vh;
-    border-radius: 3px;
-    background-color: rgb(30, 255, 0);
-    width: 100%;
-    left: 0;
-    bottom: 0;    
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
 }
 
-#iniciarSesion h2::after{
-    content: "";
-    position: absolute;
-    height: 0.3vh;
-    border-radius: 3px;
-    background-color: rgb(30, 255, 0);
-    width: 100%;
-    left: 0;
-    bottom: 0;    
-}
+
+
 
 input{
     display: block;
     width: 100%;
-    height: 8vh;
-    padding: 0.5vw 0.6vw;
-    margin-bottom: 1.5vh;
+    height: 40px;
+    padding: 5px 6px;
+    margin-bottom: 15px;
     border: none;
     outline: none;
     border-radius: 1px;
-    background-color: rgb(235, 235, 235)    ;
 }
 
 .acuerdo{
@@ -218,15 +232,11 @@ input{
     display: block;
     margin: auto;
     width: 100%;
-    height: 8vh;
+    height:40px ;
     border: none;
     cursor: pointer;
     border-radius: 20px;
     color: #fff;
-}.btn-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .link{
     text-align: center;
@@ -236,24 +246,10 @@ input{
 .header {
     color: #36A0FF;
     font-size: 27px;
-    padding: 0.1vw;
+    padding: 10px;
 }
 
 .bigicon {
     font-size: 35px;
     color: #36A0FF;
 }
-
-@media(max-width: 800px){
-    .menu{
-        display: none;
-    }
-    .menu_bar{
-        display: block;
-    }
-    #registrar{
-        left: 85%;
-        width: 85%;
-        transform: translate(-85%,-50%);
-    }
-    }
