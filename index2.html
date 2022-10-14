@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="ring">Loading
-        <span></span>
       </div>
 </body>
 </html>
@@ -36,7 +35,7 @@
 }
 .ring:before
 {
-  content:'';
+  content:'' ;
   position:absolute;
   top:-3px;
   left:-3px;
@@ -46,7 +45,7 @@
   border-top:3px solid rgb(30, 255, 0);
   border-right:3px solid rgb(30, 255, 0);
   border-radius:50%;
-  animation:animateC 2s ease-in-out infinite;
+  animation:animateC 2s ease-in-out ;
 }
 
 @keyframes animateC
@@ -59,17 +58,5 @@
   {
     transform:rotate(360deg);
   }
-}
-@keyframes animate
-{
-  0%
-  {
-    transform:rotate(45deg);
-  }
-  100%
-  {
-    transform:rotate(405deg);
-  }
-  
 }
 </style>

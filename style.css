@@ -73,47 +73,8 @@
     
 }
 
-#registrar{
-    position: absolute;
-    text-align:center;
-    min-width: 280px;
-    max-width: 25%;
-    width: 25%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 15px;
-    padding-right: 25px;
-    box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
-    background-color: rgba(245,245,245);
-    backdrop-filter: blur(100rem);
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
-    border: 2px solid black;
-    
 
-}
 
-#iniciarSesion{
-    position: absolute;
-    text-align:center;
-    min-width: 280px;
-    max-width: 25%;
-    width: 25%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 15px;
-    padding-right: 25px;
-    box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
-    background-color: rgba(245,245,245);
-    backdrop-filter: blur(100rem);
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
-    border: 2px solid black;
-    
-
-}
 
 #highScore{
     position: absolute;
