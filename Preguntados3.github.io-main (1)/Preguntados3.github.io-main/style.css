@@ -1,0 +1,213 @@
+*{
+    font-size: 17px;
+}
+
+
+#backgroung { 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+ } 
+ .stretch { 
+    width:100%;
+    height:100%;
+ }
+
+
+
+.container{
+    height:78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btn-1{
+    font-size: 5em;
+    border-radius: 20px;
+    color:  rgb(25, 128, 11);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    border-color:  rgb(25, 128, 11);
+    border-width: 10px;
+    transition: ease-in .3s;
+}
+
+#btn-1:hover{
+    font-size: 5.5em;
+    background-color: rgb(30, 255, 0);
+    color: white;
+    cursor: pointer;
+}
+.menu li{
+    list-style: none;
+}
+
+
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    
+}
+.menu button{
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+#registrarse button{
+    margin-left: 90%;
+    padding: 0px;
+    background-color: white;
+    border: none ;
+    cursor: pointer;
+    
+}
+
+
+
+
+#highScore{
+    position: absolute;
+    text-align:center;
+    min-width: 280px;
+    max-width: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    padding-right: 25px;
+    box-shadow: 0 1rem 3rem  rgba(43, 255, 0, 0.548);
+    background-color: rgba(245,245,245);
+    backdrop-filter: blur(100rem);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    
+}
+
+
+#iniciarSesion input{
+    border:none;
+    border-radius: 15px;
+    margin-bottom: 2%
+    
+}
+
+#registrar input{
+    border:none;
+    border-radius: 15px;
+    margin-bottom: 2%
+    
+}
+
+#registrar button{
+    border-radius: 7px;
+    cursor: pointer;
+   
+}
+
+#iniciarSesion p{
+    cursor: pointer;
+}
+
+
+#registrar p{
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+.btn-cerrar{
+    position: absolute;
+    left: 92%;
+    top: 0%;
+    color: red;
+    background: none;
+    border: none;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+
+.navbar-nav li{
+    margin-left: 10%;
+}
+.sammy-nowrap-1 {
+   
+    white-space: nowrap;
+}
+
+
+.nombreYapellido{
+    display: flex;
+}
+
+#registrar input{
+    margin-bottom: 5%;
+}
+
+#iniciarSesion input{
+    margin-bottom: 5%;
+}
+
+h2{
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+}
+
+
+
+
+input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 6px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+}
+
+.acuerdo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.btn-2{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height:40px ;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+}
+.link{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
