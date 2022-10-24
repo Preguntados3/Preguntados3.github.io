@@ -23,9 +23,23 @@ public class GreetingController {
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/api/registrarUsuario/{mail}/{contraseña}/{nombre}/{apellido}")
-    public void registrarUsuarios(@PathVariable String mail, @PathVariable String contraseña, @PathVariable String nombre, @PathVariable String apellido){
-        this.accesoABaseDeDatos.registrarUsuarios(mail,contraseña,nombre,apellido);
+    public ResponseEntity<Object> registrarUsuarios(@PathVariable String mail, @PathVariable String contraseña, @PathVariable String nombre, @PathVariable String apellido){
+
+        HashMap<String, Boolean>hashMap = this.accesoABaseDeDatos.registrarUsuarios(mail, contraseña, nombre, apellido);
+
+        return new ResponseEntity<>(hashMap, HttpStatus.OK);
+    }
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/api/iniciarSesion/{mail}/{contraseña}")
+    public  ResponseEntity<Object> iniciarSesion(@PathVariable String mail, @PathVariable String contraseña){
+        HashMap<String, Boolean>hashMap = this.accesoABaseDeDatos.iniciarSesion(mail, contraseña);
+        return new ResponseEntity<>(hashMap, HttpStatus.OK);
+    }
+    @GetMapping("/api/borrarUsuario/{mail}")
+    public void borrarUsuario(@PathVariable String mail){
+        this.accesoABaseDeDatos.borrarUsuario(mail);
     }
 
     @RequestMapping(value = "/datosUsuario/{nombreUsuario}/{clave}",method = RequestMethod.GET)

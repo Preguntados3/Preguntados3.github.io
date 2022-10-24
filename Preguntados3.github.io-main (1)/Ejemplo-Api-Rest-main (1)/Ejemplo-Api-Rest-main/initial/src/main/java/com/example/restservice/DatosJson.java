@@ -102,15 +102,57 @@ public class DatosJson extends Acceso {
         return false;
     }
 
-    public boolean registrarUsuarios(String mail, String contraseña, String nombre, String apellido){
+    public HashMap<String, Boolean> registrarUsuarios(String mail, String contraseña, String nombre, String apellido){
         this.conectarABaseDeDatos("TpIntegrador");
         this.conectarAColeccion("pagina");
+        HashMap<String, Boolean >repuesta = new HashMap<>();
         if (!this.usuarioYaRegistrado(mail)){
             Document document =  new Document().append("mail", mail).append("contraseña", contraseña).append("nombre", nombre).append("apellido", apellido);
             this.getColeccion().insertOne(document);
-            return true;
+            repuesta.put("respuesta", true);
+
+        }else {
+            repuesta.put("respuesta", false);
         }
-        return false;
+
+        System.out.println(repuesta.get("respuesta"));
+        return repuesta;
+    }
+
+    public HashMap<String, Boolean> iniciarSesion(String mail, String contraseña){
+        this.conectarABaseDeDatos("TpIntegrador");
+        this.conectarAColeccion("pagina");
+        HashMap<String, Boolean>hashMap = new HashMap<>();
+        if (this.usuarioYaRegistrado(mail)){
+            FindIterable resultado = this.getColeccion().find();
+            MongoCursor iterador = resultado.iterator();
+            while (iterador.hasNext()){
+                Document document = (Document) iterador.next();
+                String mailBUscado = (String) document.getString("mail");
+                String contraseñaBuscada = (String) document.getString("contraseña");
+                if (mailBUscado.equals(mail) && contraseñaBuscada.equals(contraseña)){
+                    hashMap.put("respuesta", true);
+                    return hashMap;
+                }
+            }
+        }
+        hashMap.put("respuesta", false);
+        System.out.println(hashMap.get("respuesta"));
+        return hashMap;
+    }
+
+    public void borrarUsuario(String mail){
+        this.conectarABaseDeDatos("TpIntegrador");
+        this.conectarAColeccion("pagina");
+        FindIterable resultado = this.getColeccion().find();
+        MongoCursor iterador = resultado.iterator();
+        while(iterador.hasNext()){
+            Document document = (Document) iterador.next();
+            String mailBUscado = (String) document.getString("mail");
+            if (mailBUscado.equals(mail)){
+                
+            }
+        }
     }
 
     public int obtenerCantidadItems(HashMap<String, Object> valoresRequeridos, int idLista) {

@@ -21,11 +21,17 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item" id="registro">
                 <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#staticBackdrop2"   style="cursor: pointer;">Registrarse</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link sammy-nowrap-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="cursor: pointer;">Iniciar sesion</a>
+              <li id="usuario" style="display: none; color: rgb(0, 0, 0); padding-left: 12.5px;" class="navbar-text">
+                Navbar text
+            </li>
+              <li class="nav-item" id="inicioDeSesion">
+                <a class="nav-link sammy-nowrap" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="cursor: pointer;">Iniciar sesion</a>
+              </li>
+              <li class="nav-item" id="cerrarSesion" style="display: none;">
+                <a class="nav-link sammy-nowrap" onclick="cerrarSesion()" style="cursor: pointer;">Cerrar sesion</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" style="cursor: pointer;">HighScore</a>
@@ -38,7 +44,7 @@
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a id="borrarCuenta" class="dropdown-item" style="display: none; color: red;">Eliminar cuenta</a></li>
                 </ul>
               </li>
               
@@ -63,7 +69,7 @@
               <div class="modal-body">
                 
                     
-                <form class="needs-validation" onsubmit="registrar()">
+                <form class="needs-validation" onsubmit="registrar()" >
                   <div class="nombreYapellido">
                       <div class="form-group was-validated mb-3 mr-2">
                       
@@ -110,7 +116,7 @@
         <div class="modal-body">
         
             
-              <form class="needs-validation">
+              <form class="needs-validation" onsubmit="iniciarSesion()">
                   <div class="form-group was-validated mb-5">
                     
                       <input class="form-control" type="email" placeholder="correo" id="emaili" required>
@@ -149,7 +155,7 @@
     </div>
   </div>
 </div>
-        <div class="btn-1" ><a  href="index2.html"><button id="btn-1">Jugar</button></a></div>
+        <div class="btn-1" ><a  href="index2.html"><button id="btn-1" onclick="hola()">Jugar</button></a></div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

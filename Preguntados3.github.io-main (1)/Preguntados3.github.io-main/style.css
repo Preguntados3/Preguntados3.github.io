@@ -137,12 +137,10 @@
     font-size: x-large;
 }
 
-
 .navbar-nav li{
     margin-left: 10%;
 }
-.sammy-nowrap-1 {
-   
+.sammy-nowrap {
     white-space: nowrap;
 }
 
