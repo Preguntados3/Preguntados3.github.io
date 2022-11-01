@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -40,6 +41,16 @@ public class GreetingController {
     @GetMapping("/api/borrarUsuario/{mail}")
     public void borrarUsuario(@PathVariable String mail){
         this.accesoABaseDeDatos.borrarUsuario(mail);
+    }
+    @GetMapping("/api/verHighScore")
+    public void verHighScore(){
+        this.accesoABaseDeDatos.obtenerHighScore();
+    }
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/api/obtenerPreguntas")
+    public ResponseEntity<Object> obtenerPreguntas(){
+        ArrayList<HashMap<String, String>>preguntas = this.accesoABaseDeDatos.obtenerPreguntas();
+        return new ResponseEntity<>(preguntas, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/datosUsuario/{nombreUsuario}/{clave}",method = RequestMethod.GET)
