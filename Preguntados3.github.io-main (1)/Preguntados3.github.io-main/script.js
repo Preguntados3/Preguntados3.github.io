@@ -7,7 +7,6 @@ document.getElementById("elform").onsubmit(function(event){
 function registrar(){
   
   event.preventDefault();
-    console.log("antes edl fetch");
     fetch("http://localhost:8080/api/registrarUsuario/"+ document.getElementById("email").value + "/" + document.getElementById("password").value + "/" + document.getElementById("nombre").value + "/" + document.getElementById("apellido").value).then(function(response){
       response.json().then(function(data) {
         if(!data.respuesta){
@@ -42,6 +41,8 @@ function modoObscuro(){
         document.getElementById("registro").style.display = "none"
         document.getElementById("inicioDeSesion").style.display = "none"
         document.getElementById("usuario").style.display = "block"
+        document.getElementById("btn-1").style.display = "block"
+        document.getElementById("btn-2").style.display = "none"
         let mail = document.getElementById("emaili", "email").value;
         usuarioActual = mail
         console.log(mail)

@@ -14,13 +14,12 @@
       <div id="container" class="container">
         <p id="pregunta" class="text-center"></p>
         <div id="opciones" class="text-center">
-          <div id="d1" class="division1">
-            <button id="o1" >opcion 1</button>
-            <button id="o2" >opcion 2</button>
-          </div>
-          <div id="d2" class="division2">
-            <button id="o3" >opcion 3</button>
-            <button id="o4" >opcion 4</button>
+
+            <button onclick="respuestaUsuario('A')" id="o1" >opcion 1</button>
+            <button onclick="respuestaUsuario('B')" id="o2" >opcion 2</button>
+            <div class="a"></div>
+            <button onclick="respuestaUsuario('C')" id="o3" >opcion 3</button>
+            <button onclick="respuestaUsuario('D')" id="o4" >opcion 4</button>
           </div>
         </div>
       </div>
@@ -31,19 +30,43 @@
 </html>
 <script>
  
+let preguntaActual;
+let todasLasPreguntas;
+let contadorPreguntaActual = 0;
+let HighScore = 0;
+
+
+ function respuestaUsuario(respuesta){
+   
+    if(todasLasPreguntas[contadorPreguntaActual].correcta === respuesta){
+      console.log("bien");
+      contadorPreguntaActual++;
+      HighScore++;
+      pasarSiguiente();
+      return true;
+    }
+    else{
+      console.log("mal");
+      alert("malo de re mierda");
+      return false;
+    }
+    
+  }
+
+  function pasarSiguiente(){
+    console.log("adcs");
+    document.getElementById("pregunta").innerText = todasLasPreguntas[contadorPreguntaActual].Pregunta;
+    document.getElementById("o1").innerText = todasLasPreguntas[contadorPreguntaActual].A;
+    document.getElementById("o2").innerText = todasLasPreguntas[contadorPreguntaActual].B;
+    document.getElementById("o3").innerText = todasLasPreguntas[contadorPreguntaActual].C;
+    document.getElementById("o4").innerText = todasLasPreguntas[contadorPreguntaActual].D;
+  }
+
   function obtenerPreguntas(){
     fetch("http://localhost:8080/api/obtenerPreguntas").then(function(response){
       response.json().then(function(data){
-        for(let i = 0; i < data.length;i++){
-          let pregunta = data[0];
-          console.log(pregunta.Pregunta);
-          document.getElementById("pregunta").innerText = pregunta.Pregunta;
-          document.getElementById("o1").innerText = pregunta.A;
-          document.getElementById("o2").innerText = pregunta.B;
-          document.getElementById("o3").innerText = pregunta.C;
-          document.getElementById("o4").innerText = pregunta.D;
-        }
-        
+        todasLasPreguntas = data;
+        pasarSiguiente();
       })
     })
   }
@@ -78,7 +101,6 @@
  #opciones button{
   font-size: 20px;
   padding: 30px;
-  padding-left: 100px;
   border:2px solid rgb(30, 255, 0) ;
  }
 

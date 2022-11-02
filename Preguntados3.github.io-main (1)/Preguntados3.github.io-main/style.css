@@ -37,6 +37,17 @@
     transition: ease-in .3s;
 }
 
+#btn-2{
+    font-size: 5em;
+    border-radius: 20px;
+    color:  rgb(99, 104, 98);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    border-color:  rgb(40, 43, 40);
+    border-width: 10px;
+    transition: ease-in .3s;
+}
+
 #btn-1:hover{
     font-size: 5.5em;
     background-color: rgb(30, 255, 0);
