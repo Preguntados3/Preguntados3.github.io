@@ -228,6 +228,19 @@ public class DatosJson extends Acceso {
         }
         return listaPreguntas;
     }
+    public void actualizarHighScore(String mail, int score){
+        this.conectarABaseDeDatos("TpIntegrador");
+        this.conectarAColeccion("pagina");
+        FindIterable resultado = this.getColeccion().find();
+        MongoCursor iterador = resultado.iterator();
+        while (iterador.hasNext()){
+            Document document = (Document) iterador.next();
+            String mailBUscado = (String) document.getString("mail");
+            if (mailBUscado.equals(mail)){
+                
+            }
+        }
+    }
 
     
 

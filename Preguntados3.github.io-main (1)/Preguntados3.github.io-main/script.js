@@ -1,5 +1,4 @@
-
-let usuarioActual
+let usuarioActual = "";
 
 document.getElementById("elform").onsubmit(function(event){
   event.preventDefault();
@@ -30,6 +29,12 @@ function modoObscuro(){
 
 }
 
+
+function savesnum(val) {
+  document.cookie = 'snum:'+val; //Set the cookie
+}
+
+// 8==D
   function iniciarSesion(){
     event.preventDefault();
     fetch("http://localhost:8080/api/iniciarSesion/" + document.getElementById("emaili").value + "/" + document.getElementById("passwordi").value).then(function(response){
@@ -53,6 +58,7 @@ function modoObscuro(){
         document.getElementById("usuario").innerText = usuario
         document.getElementById("borrarCuenta").style.display = "block"
         $("#staticBackdrop").modal("hide");
+        localStorage.setItem("usuario", usuarioActual);
       }
       else{
           alert("El correo o la contraseña no son correctos")
@@ -60,15 +66,17 @@ function modoObscuro(){
     });
   });
   }
+
+  
+
   function cerrarSesion(){
         document.getElementById("cerrarSesion").style.display = "none"
         document.getElementById("registro").style.display = "block"
         document.getElementById("inicioDeSesion").style.display = "block"
         document.getElementById("usuario").style.display = "none"
         document.getElementById("borrarCuenta").style.display = "none"
+        localStorage.removeItem("usuario") ;
   }
   function eliminarCuenta(){
     fetch("http://localhost:8080/api/borrarUsuario/" + usuarioActual)
   }
-
-  
