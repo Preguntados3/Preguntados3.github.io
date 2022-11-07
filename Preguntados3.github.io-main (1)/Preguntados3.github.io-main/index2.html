@@ -15,7 +15,7 @@
       </div>
 
       <div id="container" class="container">
-        <p id="pregunta" class="text-center"></p>
+        <p id="pregunta" class="text-center">Pregunta</p>
         <div id="opciones" class="text-center">
 
             <button onclick="respuestaUsuario('A')" id="o1" >opcion 1</button>
@@ -38,9 +38,10 @@
 <style>
  
  #pregunta{
-  border: 3px solid rgb(30, 255, 0);
+  border: 3px solid rgb(0, 110, 255);
   font-size: 50px;
   margin-top: 20px;
+  border-radius: 50px;
  }
 
  #d1{
@@ -61,9 +62,22 @@
 
  #opciones button{
   font-size: 20px;
-  padding: 30px;
-  border:2px solid rgb(30, 255, 0) ;
+  height: 7em;
+  width: 15em;
+  margin: 2em;
+  border:2px solid rgb(0, 110, 255) ;
+  border-radius: 20px;
+  background-color: rgb(238, 238, 238);
+  transition: ease-in .3s;
  }
+
+ #opciones button:hover{
+  transition: ease-in .3s;
+  box-shadow: 0 2rem 4rem  rgba(0, 110, 255, 0.688);
+ }
+
+
+
 
 
  
