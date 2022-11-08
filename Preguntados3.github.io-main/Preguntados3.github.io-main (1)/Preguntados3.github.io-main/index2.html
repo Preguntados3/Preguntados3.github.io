@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "script2.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Preguntados 3</title>
+</head>
+<body>
+ 
+
+    <div style="display: none;" class="ring">Loading
+      </div>
+
+      <div id="container" class="container">
+        <p id="pregunta" class="text-center">Pregunta</p>
+        <div id="opciones" class="text-center">
+
+            <button onclick="respuestaUsuario('A')" id="o1" >opcion 1</button>
+            <button onclick="respuestaUsuario('B')" id="o2" >opcion 2</button>
+            <div class="a"></div>
+            <button onclick="respuestaUsuario('C')" id="o3" >opcion 3</button>
+            <button onclick="respuestaUsuario('D')" id="o4" >opcion 4</button>
+          </div>
+        </div>
+      </div>
+
+
+    
+
+
+</body>
+</html>
+
+
+<style>
+ 
+ #pregunta{
+  border: 3px solid rgb(0, 110, 255);
+  font-size: 50px;
+  margin-top: 20px;
+  border-radius: 50px;
+ }
+
+ #d1{
+  margin: 5em;
+  margin-top: -4em;
+ }
+ #d1 button{
+  margin: 5em;
+ }
+ #d2{
+  margin: 5em;
+  margin-top: -4em;
+ }
+ #d2 button{
+  margin: 5em;
+  margin-top: -4em;
+ }
+
+ #opciones button{
+  font-size: 20px;
+  height: 7em;
+  width: 15em;
+  margin: 1.5em;
+  border:2px solid rgb(0, 110, 255) ;
+  border-radius: 20px;
+  background-color: rgb(238, 238, 238);
+  transition: ease-in .3s;
+ }
+
+ #opciones button:hover{
+  transition: ease-in .3s;
+  box-shadow: 0 2rem 4rem  rgba(0, 110, 255, 0.688);
+ }
+
+
+
+
+
+ 
+    .ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  border:3px solid #0b6b03;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:rgb(30, 255, 0);
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px rgb(30, 255, 0);
+  box-shadow:0 0 20px rgba(43, 255, 0, 0.801);
+}
+.ring:before
+{
+  content:'' ;
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid rgb(30, 255, 0);
+  border-right:3px solid rgb(30, 255, 0);
+  border-radius:50%;
+  animation:animateC 2s ease-in-out ;
+}
+
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+</style>
