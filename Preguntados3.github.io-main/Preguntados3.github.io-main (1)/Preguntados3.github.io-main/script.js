@@ -2,11 +2,12 @@ let usuarioActual = "";
 let yaJugo;
 
 
-function registrar(){ 
+function registrar(){
+  event.preventDefault(); 
     fetch("http://localhost:8080/api/registrarUsuario/"+ document.getElementById("email").value + "/" + document.getElementById("password").value + "/" + document.getElementById("nombre").value + "/" + document.getElementById("apellido").value).then(function(response){
       response.json().then(function(data) {
         if(!data.respuesta){
-          alert("Cuenta ya registrada");
+          document.getElementById("alerta2").style.display = "block"
         }else{
           $("#staticBackdrop2").modal("hide");
         }
@@ -100,7 +101,7 @@ document.getElementById("elform2").onsubmit(function(event){
         localStorage.removeItem("estabaIngresado");
       }
       else{
-          alert("El correo o la contraseña no son correctos")
+          document.getElementById("alerta").style.display = "block";
       }
     });
     

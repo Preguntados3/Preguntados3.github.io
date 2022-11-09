@@ -9,9 +9,9 @@ let HighScore = 0;
  function respuestaUsuario(respuesta){
    
     if(todasLasPreguntas[contadorPreguntaActual].correcta === respuesta){
-      console.log("bien");
       contadorPreguntaActual++;
       HighScore++;
+      document.getElementById("contador").innerText = HighScore;
       if(contadorPreguntaActual === todasLasPreguntas.length){
         fetch("http://localhost:8080/api/actualizarHighscore/" + usuarioActual + "/" + HighScore);
         alert("wtf gano alguien");
@@ -22,7 +22,6 @@ let HighScore = 0;
     }
     else{
       fetch("http://localhost:8080/api/actualizarHighscore/" + usuarioActual + "/" + HighScore);
-      console.log("mal");
       localStorage.setItem("estabaIngresado", true);
       console.log(localStorage.getItem("estabaIngresado"));
       alert("pal lobby");
@@ -39,6 +38,7 @@ let HighScore = 0;
     document.getElementById("o2").innerText = todasLasPreguntas[contadorPreguntaActual].B;
     document.getElementById("o3").innerText = todasLasPreguntas[contadorPreguntaActual].C;
     document.getElementById("o4").innerText = todasLasPreguntas[contadorPreguntaActual].D;
+    document.getElementById("categoria").innerText = todasLasPreguntas[contadorPreguntaActual].Categoria;
   }
 
   function obtenerPreguntas(){

@@ -1,0 +1,804 @@
+[{
+  "_id": {
+    "$oid": "635faf19c51f39df86c02b4b"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿cual es el país con mas mundiales?",
+  "A": "Brasil",
+  "B": "Italia",
+  "C": "Alemania",
+  "D": "Uruguay",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "635fb206737e20216581f974"
+  },
+  "categoria": "Historia",
+  "pregunta": "¿Cuando fue descubierta America?",
+  "A": "1492",
+  "B": "1501",
+  "C": "1490",
+  "D": "1485",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "635fb264737e20216581f975"
+  },
+  "categoria": "Geografia",
+  "pregunta": "¿Cual es el continente con mayor indice de delincuencia?",
+  "A": "Asia",
+  "B": "America",
+  "C": "Africa",
+  "D": "Oceania",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "635fb2ef737e20216581f976"
+  },
+  "categoria": "Entretenimiento",
+  "pregunta": "¿cual es la peor pelicula de la historia?",
+  "A": "El curiosos caso de Benjamin Button",
+  "B": "El retorno",
+  "C": "Sharknado",
+  "D": "La venganza atroz 3",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "6368fb4175508aacd731f3d5"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿Quien es el máximo goleador de la historia Argentina?",
+  "A": "Maradona",
+  "B": "Messi",
+  "C": "Batistuta",
+  "D": "Aguero",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "6368fb9f75508aacd731f3d6"
+  },
+  "categoria": "Deporte",
+  "pregunta": "Quien salió campeón del mundo del 2010?",
+  "A": "Brasil",
+  "B": "Alemania",
+  "C": "España",
+  "D": "Sudafrica",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "6368fbf075508aacd731f3d7"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿Cual es el equipo con mas libertadores?",
+  "A": "Boca",
+  "B": "River",
+  "C": "Independiente",
+  "D": "Estudiantes",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "6368fc3e75508aacd731f3d8"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿Quien es máximo ganador de balones de oro?",
+  "A": "Cristiano Ronaldo",
+  "B": "Pele",
+  "C": "Zidane",
+  "D": "Messi",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "6368fca475508aacd731f3d9"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿Quien es el único ganador del súper balón de oro?",
+  "A": "Messi",
+  "B": "Cristiano Ronaldo",
+  "C": "Maradona",
+  "D": "Di Stefano",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "6368fce375508aacd731f3da"
+  },
+  "categoria": "Deporte",
+  "pregunta": "Cual es el estadio de Argentina con más capacidad máxima de espectadores?",
+  "A": "La Bombonera",
+  "B": "El Monumental",
+  "C": "El Libertadores De America",
+  "D": "El cilindro",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "6368fd8e75508aacd731f3db"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿Cual es el equipo con mas torneos locales de Argentina?",
+  "A": "Boca",
+  "B": "River",
+  "C": "Independiente",
+  "D": "Ferro",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "6368fddf75508aacd731f3dc"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿Cual es el maximo ganador de la champions league? ",
+  "A": "Barcelona",
+  "B": "Milan",
+  "C": "Bayern Munich",
+  "D": "Real Madrid",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "6368fe3b75508aacd731f3dd"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿En cual de estos equipos no jugó Ronaldo?",
+  "A": "Real Madrid",
+  "B": "Sporting De Lisboa",
+  "C": "Barcelona",
+  "D": "Inter",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "6368fe8f75508aacd731f3de"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿Cual de estos jugadores nunca ganó un mundial?",
+  "A": "Johan Cruyff",
+  "B": "Cannavaro",
+  "C": "Kempes",
+  "D": "Thierry Henry",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "6368fed075508aacd731f3df"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿cual fue el jugador que logro hacer 5 goles en 13 minutos?",
+  "A": "Luis Suarez",
+  "B": "Pele",
+  "C": "Lewandowski",
+  "D": "Messi",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "6368ff1775508aacd731f3e0"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿cuando se jugó por primera vez la copa libertadores?",
+  "A": "1960",
+  "B": "1957",
+  "C": "1974",
+  "D": "1970",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "6368ff6275508aacd731f3e1"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿Quien es el máximo ganador de la copa Africana?",
+  "A": "Nigeria",
+  "B": "Egipto",
+  "C": "Senegal",
+  "D": "Sudafrica",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "6368ffbf75508aacd731f3e2"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿Cual es el nombre del ultimo equipo mexicano que dirigió EL DIEGO?",
+  "A": "Las Chivas",
+  "B": "Monterey",
+  "C": "los Pumas ",
+  "D": "Los Dorados De Sinaloa",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "6369001775508aacd731f3e3"
+  },
+  "categoria": "Deporte",
+  "pregunta": "¿En que años salio campeón del mundo Argentina? ",
+  "A": "1978 y 1980",
+  "B": "1986 y 2014",
+  "C": "1986 y 1990",
+  "D": "1978 y 1986",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636900b975508aacd731f3e4"
+  },
+  "categoria": "historia",
+  "pregunta": "¿Cuando descubrió America colon?",
+  "A": "1492",
+  "B": "1501",
+  "C": "1490",
+  "D": "1485",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636900ef75508aacd731f3e5"
+  },
+  "categoria": "historia",
+  "pregunta": "¿En que año se declaro la independencia de Argentina? ",
+  "A": "1810",
+  "B": "1816",
+  "C": "1814",
+  "D": "1824",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "6369011a75508aacd731f3e6"
+  },
+  "categoria": "historia",
+  "pregunta": "¿Donde nació Hitler? ",
+  "A": "Polonia",
+  "B": "Austria",
+  "C": "Alemania",
+  "D": "Ucrania",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "6369015275508aacd731f3e7"
+  },
+  "categoria": "historia",
+  "pregunta": "¿Cuanto duró la guerra de los 100 años?",
+  "A": "100",
+  "B": "99",
+  "C": "122",
+  "D": "116",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636901b175508aacd731f3e8"
+  },
+  "categoria": "historia",
+  "pregunta": "¿A partir de que acontecimiento se miden los años?",
+  "A": "El nacimiento de el Diego ",
+  "B": "El nacimiento de Cristo",
+  "C": "La revolución industrial",
+  "D": "La caida del imperio romano",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636901f575508aacd731f3e9"
+  },
+  "categoria": "historia",
+  "pregunta": "¿En que año explotó la primera guerra mundial? ",
+  "A": "1928",
+  "B": "1922",
+  "C": "1914",
+  "D": "1915",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "6369024b75508aacd731f3ea"
+  },
+  "categoria": "historia",
+  "pregunta": "¿En que año se desarrollo la guerra de las Malvinas?",
+  "A": "1980",
+  "B": "1982",
+  "C": "1981",
+  "D": "1988",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636902be75508aacd731f3eb"
+  },
+  "categoria": "historia",
+  "pregunta": "¿Con que apodo era conocida Lady DI? ",
+  "A": "La reina del pueblo",
+  "B": "La verdadera reina",
+  "C": "La mujer del corazon gigante",
+  "D": "La reina de corazones",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "6369030d75508aacd731f3ec"
+  },
+  "categoria": "historia",
+  "pregunta": "¿En que ciudad detono la bomba Fat Man?",
+  "A": "Nagasaki",
+  "B": "Tokio",
+  "C": "Hiroshima",
+  "D": "Hong Kong",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "6369035475508aacd731f3ed"
+  },
+  "categoria": "historia",
+  "pregunta": "¿En que año fue la primera revolución industrial?",
+  "A": "1970",
+  "B": "1615",
+  "C": "1710",
+  "D": "1760",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636903b875508aacd731f3ee"
+  },
+  "categoria": "historia",
+  "pregunta": "¿En que año se incendio la biblioteca de Alexandria?",
+  "A": "45 ac",
+  "B": "391",
+  "C": "55 ac",
+  "D": "115",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636903f375508aacd731f3ef"
+  },
+  "categoria": "historia",
+  "pregunta": "¿Cuando murió Julio Cesar?",
+  "A": "47 ac",
+  "B": "44 ac",
+  "C": "41 ac",
+  "D": "50 ac",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "6369041175508aacd731f3f0"
+  },
+  "categoria": "historia",
+  "pregunta": "¿En cuantos países se dividió Yugoslavia? ",
+  "A": "3",
+  "B": "4",
+  "C": "5",
+  "D": "6",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636904a475508aacd731f3f1"
+  },
+  "categoria": "historia",
+  "pregunta": "¿En que año nació Hitler?",
+  "A": "1889",
+  "B": "1870",
+  "C": "1895",
+  "D": "1979",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636a9c24e62d611894372984"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿En cual de estos continente esta Rusia?",
+  "A": "Antartida",
+  "B": "Asia",
+  "C": "America",
+  "D": "Oceania",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636a9c65e62d611894372985"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cuantos continentes hay?",
+  "A": "5",
+  "B": "6",
+  "C": "7",
+  "D": "8",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636a9cc9e62d611894372986"
+  },
+  "categoria": "geografia",
+  "pregunta": "Cuantos paises hay en america?",
+  "A": "20",
+  "B": "25",
+  "C": "35",
+  "D": "54",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636a9cede62d611894372987"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cuantos paises hay en europa?",
+  "A": "46",
+  "B": "75",
+  "C": "52",
+  "D": "31",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636a9d23e62d611894372988"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cuantos oceanos hay en el mundo?",
+  "A": "3",
+  "B": "4",
+  "C": "5",
+  "D": "6",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636a9d51e62d611894372989"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cual es el pais mas poblado?",
+  "A": "Rusia",
+  "B": "China",
+  "C": "India",
+  "D": "Japon",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636a9d8fe62d61189437298a"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cual es el idioma mas hablado?",
+  "A": "Ingles",
+  "B": "Chino",
+  "C": "Aleman",
+  "D": "Español",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636a9eabe62d61189437298b"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cual es la montañana con mayor tamaño del mundo?",
+  "A": "Monte Everest",
+  "B": "K2",
+  "C": "Mauna Kea",
+  "D": "Kanchenjunga",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636a9ef5e62d61189437298c"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cual es el pais con menor tamaño del mundo?",
+  "A": "El Vaticano",
+  "B": "Ghana",
+  "C": "Letonia",
+  "D": "Escocia",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636a9f20e62d61189437298d"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cuantos mares existen?",
+  "A": "4",
+  "B": "5",
+  "C": "6",
+  "D": "60",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636a9f8de62d61189437298e"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cual es la ciudad mas poblada del mundo?",
+  "A": "Tokio",
+  "B": "Estambul",
+  "C": "Hong Kong",
+  "D": "new York",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636a9fc3e62d61189437298f"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cual de estos paises no tiene rios",
+  "A": "Bolivia",
+  "B": "Catar",
+  "C": "Sudan",
+  "D": "Malta",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636a9ffae62d611894372990"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿En que pais se hablan mas idiomas",
+  "A": "Australia",
+  "B": "EEUU",
+  "C": "Papua Nueva Guinea",
+  "D": "Canada",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636aa02be62d611894372991"
+  },
+  "categoria": "geografia",
+  "pregunta": "¿Cuantos paises forman parte de la Union Europea",
+  "A": "27",
+  "B": "33",
+  "C": "21",
+  "D": "11",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa09ae62d611894372992"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Quien interpretó a Hitler en el Gran Dictador?",
+  "A": "Charles Chaplin",
+  "B": "Bradd pitt",
+  "C": "Angelina jolie",
+  "D": "Teddy boultreur",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa0f5e62d611894372993"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cual fue la primera pelicula de Disney?",
+  "A": "La bella y la Bestia",
+  "B": "Blancanieves",
+  "C": "Pinocho",
+  "D": "Peter Pan",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636aa14ce62d611894372994"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "Cómo se llama la madre de Simba en la película de  “El rey león”",
+  "A": "Sarabi",
+  "B": "Mani",
+  "C": "Kiala",
+  "D": "Chloe",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa183e62d611894372995"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿En qué año se emitió el último episodio de la serie “The Office”?",
+  "A": "2011",
+  "B": "2014",
+  "C": "2013",
+  "D": "2017",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636aa1cce62d611894372996"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cómo se llama el protagonista de la saga de videojuegos “La Leyenda de Zelda”?",
+  "A": "Zelda",
+  "B": "Link",
+  "C": "Hyrule",
+  "D": "Majora",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636aa27fe62d611894372997"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cuál fue la primera película en ganar el Óscar a “Mejor película”?",
+  "A": "Wings",
+  "B": "Titanic",
+  "C": "Hombre en llamas",
+  "D": "El Señor de los anillos",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa2d9e62d611894372998"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cómo se llama el perro de Tintín?",
+  "A": "Roco",
+  "B": "Peter",
+  "C": "Milu",
+  "D": "Joan",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636aa31be62d611894372999"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cúantos Oscars tiene Leonardo Di Caprio?",
+  "A": "2",
+  "B": "5",
+  "C": "3",
+  "D": "1",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636aa3a6e62d61189437299a"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cúantas peliculas hizo Bruce Lee?",
+  "A": "51",
+  "B": "46",
+  "C": "32",
+  "D": "29",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa40be62d61189437299b"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cúal es la pelicula con mayor valoración?",
+  "A": "Marte necesita mamás",
+  "B": "titanic",
+  "C": "Pulp Fiction",
+  "D": "El Padrino",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636aa49fe62d61189437299d"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cúantas peliculas hay de Harry Potter?",
+  "A": "7",
+  "B": "8",
+  "C": "5",
+  "D": "6",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636aa4c5e62d61189437299e"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cúantas peliculas hay de Shrek?",
+  "A": "6",
+  "B": "4",
+  "C": "5",
+  "D": "3",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa4f3e62d61189437299f"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cúantas peliculas hay de Kung Fu Panda?",
+  "A": "5",
+  "B": "3",
+  "C": "2",
+  "D": "4",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636aa61ee62d6118943729a0"
+  },
+  "categoria": "entretenimiento",
+  "pregunta": "¿Cúantos aliens tiene Ben 10 ?",
+  "A": "10",
+  "B": "88",
+  "C": "104",
+  "D": "207",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636aa7f7e62d6118943729a1"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿En que mes esta el Sol mas cerca de la Tierra?",
+  "A": "Enero",
+  "B": "Agosto",
+  "C": "Julio",
+  "D": "Diciembre",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636aa879e62d6118943729a2"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿Cual es el primer numero que viene despues del 3,14 en PI?",
+  "A": "1",
+  "B": "6",
+  "C": "8",
+  "D": "2",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa8fde62d6118943729a3"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿En que lado del cuerpo esta el corazón?",
+  "A": "Superior Izquierdo",
+  "B": "Superior Derecho",
+  "C": "Centro Superior",
+  "D": "Inferior derecho",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa948e62d6118943729a4"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿Cuantos elementos tiene la tabla periodica?",
+  "A": "118",
+  "B": "98",
+  "C": "200",
+  "D": "111",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa983e62d6118943729a5"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿Cual es la velocidad de la luz?",
+  "A": "300.000kps",
+  "B": "450.000kps",
+  "C": "900.000kps",
+  "D": "150.000kps",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aa9d2e62d6118943729a6"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿De los 5 sentidos, cual es el que se desarrolla primero?",
+  "A": "Olfato",
+  "B": "Gusto",
+  "C": "Audición",
+  "D": "Vista",
+  "respuesta_correcta": "A"
+},{
+  "_id": {
+    "$oid": "636aaa1ee62d6118943729a7"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿A partir de que planta se elabora el tequila?",
+  "A": "El tequilar",
+  "B": "Aloe Vera",
+  "C": "La Maritiana",
+  "D": "El Agave",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636aaa61e62d6118943729a8"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿Que ciencia estudia la sangre?",
+  "A": "La biologia",
+  "B": "La Hematologia",
+  "C": "La Sangreologia",
+  "D": "No hay",
+  "respuesta_correcta": "B"
+},{
+  "_id": {
+    "$oid": "636aaaade62d6118943729a9"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿Cual es el unico mes que puede tener menos de 4 fases lunares?",
+  "A": "diciembre",
+  "B": "noviembre",
+  "C": "Febrero",
+  "D": "Enero",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636aaaefe62d6118943729aa"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿Cual es el elemento mas abundante en la tierra?",
+  "A": "Oxigeno",
+  "B": "Dioxido de Carbono",
+  "C": "Hidrogeno",
+  "D": "Dioxido cluridico",
+  "respuesta_correcta": "C"
+},{
+  "_id": {
+    "$oid": "636aab39e62d6118943729ab"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿Cual es el animal mas peligroso del mundo?",
+  "A": "La cobra",
+  "B": "La araña voladora de Nigeria",
+  "C": "La viuda negra",
+  "D": "La medusa avispa de mar",
+  "respuesta_correcta": "D"
+},{
+  "_id": {
+    "$oid": "636aab94e62d6118943729ac"
+  },
+  "categoria": "ciencias",
+  "pregunta": "¿Que edad tiene la tierra?",
+  "A": "5783",
+  "B": "2022",
+  "C": "4543000000",
+  "D": "55123455",
+  "respuesta_correcta": "C"
+}]

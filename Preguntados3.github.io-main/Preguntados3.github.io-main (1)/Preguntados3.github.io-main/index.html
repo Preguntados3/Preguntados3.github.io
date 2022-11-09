@@ -57,7 +57,7 @@
 
     <div id="container" class="container">
        
-        <div class="modal fade " id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade mw-50" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -68,32 +68,35 @@
                 
                     
                 <form class="needs-validation" id="elform"  onsubmit="registrar()">
+                  <div class="alert alert-danger" style="display: none;" id="alerta2" role="alert">
+                    El correo ya esta registrado
+                  </div>  
                   <div class="nombreYapellido">
                       <div class="form-group was-validated mb-3 mr-2">
                       
-                          <input class="form-control" type="text" placeholder="Nombre" id="nombre" required>
+                          <input class="form-control rounded-4" type="text" placeholder="Nombre" id="nombre" required>
   
                       </div>
                       <div class="form-group was-validated mb-3 ml-2">
                           
-                          <input class="form-control" type="text" placeholder="Apellido" id="apellido" required>
+                          <input class="form-control rounded-4" type="text" placeholder="Apellido" id="apellido" required>
                           
                       </div>
                   </div>
                   
                   <div class="form-group was-validated mb-3">
                       
-                      <input class="form-control" type="email" placeholder="E-mail" id="email" required>
+                      <input class="form-control rounded-4" type="email" placeholder="E-mail" id="email" required>
                       
                   </div>
                   <div class="form-group was-validated mb-3">
                       
-                      <input class="form-control" type="password" placeholder="Contraseña" id="password" required>
+                      <input  class="form-control rounded-4" type="password" placeholder="Contraseña" id="password" required>
                       
                   </div>
                   <p>Estoy de acuerdo con los terminos y condiciones</p>
                   <input type="checkbox" class="mb-3"   required>
-                  <input class="btn btn-outline-primary" type="submit" value="Registrarse">
+                  <input class="btn btn-outline-primary rounded-4" id="btn-registro" type="submit" value="Registrarse">
               </form>
               </div>
             </div>
@@ -110,21 +113,21 @@
         <div class="modal-body">
         
             
-              <form class="needs-validation" id="elform2" onsubmit="iniciarSesion(); obtenerUsuario();">
-                  <div class="form-group was-validated mb-5">
+              <form class="needs-validation" id="elform2" onsubmit="iniciarSesion()">
+                <div class="alert alert-danger" style="display: none;" id="alerta" role="alert">
+                  El correo o la contraseña no son correctos
+                </div>  
+                <div class="form-group was-validated mb-5">
                     
-                      <input class="form-control" type="email" placeholder="Correo" id="emaili" required>
+                      <input class="form-control rounded-4" type="email" placeholder="Correo" id="emaili" required>
                     
                   </div>
                   <div class="form-group was-validated mb-5">
                     
-                      <input class="form-control" type="password" placeholder="Contraseña" id="passwordi" required>
+                      <input class="form-control rounded-4" type="password" placeholder="Contraseña" id="passwordi" required>
                     
                   </div> 
-                  <input class="btn btn-outline-primary"type="submit" value="Iniciar sesion">
-                
-
-              
+                  <input class="btn btn-outline-primary rounded-4"type="submit" value="Iniciar sesion">
               </form>
         </div>
       </div>
@@ -145,7 +148,7 @@
         Inicia sesion para jugar
       </div>
       <div class="modal-footer">
-      
+        <input class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" value="Iniciar sesion">
       </div>
     </div>
   </div>
