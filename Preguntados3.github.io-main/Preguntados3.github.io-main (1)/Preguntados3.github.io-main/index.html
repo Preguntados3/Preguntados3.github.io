@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand">
-            Preguntados3
+            Preguntados 3
           </a>
       
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
                 Navbar text
             </li>
               <li class="nav-item" id="inicioDeSesion">
-                <a class="nav-link sammy-nowrap" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="cursor: pointer;">Iniciar sesion</a>
+                <a class="nav-link sammy-nowrap" onclick="esconderLoDelChino()"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="cursor: pointer;">Iniciar sesion</a>
               </li>
               <li class="nav-item" id="cerrarSesion" style="display: none;">
                 <a class="nav-link sammy-nowrap" data-bs-toggle="modal" data-bs-target="#staticBackdrop5" style="cursor: pointer;">Cerrar sesion</a>
@@ -127,7 +127,10 @@
                       <input class="form-control rounded-4" type="password" placeholder="Contraseña" id="passwordi" required>
                     
                   </div> 
-                  <input class="btn btn-outline-primary rounded-4"type="submit" value="Iniciar sesion">
+
+                  <input class="btn btn-outline-primary rounded-4" style="margin-bottom: 2%;" type="submit" value="Iniciar sesion">
+                
+                  <a class="modal-title fs-5"  data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style="cursor:pointer; text-decoration:none; font-size: xx-small; display: none;" id="loDelChino">registrate</a>
               </form>
         </div>
       </div>
@@ -145,10 +148,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style="text-align: center;">
-        Inicia sesion para jugar
+        Inicia sesión para jugar
       </div>
       <div class="modal-footer">
-        <input class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" value="Iniciar sesion">
+        <input class="btn btn-outline-primary" style="border-radius: 20px;" data-bs-toggle="modal"  onclick="mostrarLoDelChino()" data-bs-target="#staticBackdrop" value="Iniciar sesion">
       </div>
     </div>
   </div>

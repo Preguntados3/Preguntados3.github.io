@@ -142,3 +142,9 @@ document.getElementById("elform2").onsubmit(function(event){
     localStorage.removeItem("estabaIngresado");
   }
  
+function mostrarLoDelChino(){
+    document.getElementById("loDelChino").style.display = "block"
+}
+function esconderLoDelChino(){
+  document.getElementById("loDelChino").style.display = "none"
+}
